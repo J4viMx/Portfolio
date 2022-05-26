@@ -85,10 +85,66 @@ body{
     font-size: 100%;
     min-height: 100vh;
     background-color: var(--blanco);
+    color: white;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 2;
+    line-height: 1.2;
+}
+
+.circulos{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--gris);
+    z-index: 1;
+    filter: blur(50px);
+}
+.circulo{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    animation: circulo1 50s linear infinite both;
+}
+
+
+.circulo1{
+    top: 0%;
+    left: 0%;
+
+}
+
+.circulo1 .path{
+    fill: rgb(4, 0, 255);
+}
+
+
+.circulo2{
+    top: 0%;
+    right: 0%;
+}
+
+.circulo2 .path{
+    fill: seagreen;
+}
+.circulo3{
+    bottom: 0%;
+    left: 0%;
+}
+
+.circulo3 .path{
+    fill: black;
+}
+
+.circulo4{
+    bottom: 0%;
+    right: 0%;
+}
+
+.circulo4 .path{
+    fill: rgb(207, 146, 32);
 }
 
 
@@ -103,6 +159,7 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    display: none;
 }
 .header .h1{
     
@@ -122,16 +179,16 @@ body{
 
 
 main{
-    background-color: lightblue;
     margin: 1rem 0;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .seccion{
     width: 100%;
     min-height: 80vh;
-    background: lime;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     padding: 2rem;
 
     display: flex;
@@ -139,10 +196,13 @@ main{
     justify-content: center;
     align-items: center;
 }
-.seccion .circulos{}
-.seccion .circulo{}
+
+.seccion .info{
+    font-size: 1.5rem;
+}
+
 .seccion .ul{
-    background: red;
+    /* background: red; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -151,15 +211,35 @@ main{
 .seccion .ul .li{
     margin: 0 1rem;
 }
-.seccion .ul .a{}
-.seccion .h2{}
-.seccion .h3{}
+.seccion .ul .a{
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 1rem 1rem;
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.seccion .ul .a:hover{
+    border-color: black;
+}
+
+
+.seccion .h2{
+    font-family: var(--tipografia);
+    font-size: 10rem;
+    font-weight: 400;
+}
+.seccion .h3{
+    font-family: var(--tipografia);
+    font-size: 5rem;
+    font-style: italic;
+}
 
 .seccion .p{}
 .seccion .grid{
     width: 90%;
     max-width: 40rem;
-    background: lightcoral;
     display: grid;
     margin: 1rem 0;
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
@@ -168,32 +248,47 @@ main{
 .seccion .article{
     width: 100%;
     min-height: 20vh;
-    background-color: lightblue;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 
 .seccion .a{}
 .seccion .img{
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 .seccion .h4{
     width: 100%;
-    height: 50%;
-    background: coral;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
     position: absolute;
+    backdrop-filter: blur(1rem);
     bottom: 0;
     left: 0;
-
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
     display: flex;
     flex-grow: row wrap;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transform: translateY(1) scale(1.2);
+    transition: all .5s ease;
+}
+
+.seccion .article:hover .h4{
+    opacity: 1;  
+    transform: translateY(1) scale(1);
+}
+
+.works .h2{
+    margin-bottom: 1rem;
 }
 
 .contacto{}
@@ -202,14 +297,14 @@ main{
 }
 .contacto .p{
     max-width: 40rem;
-    background: lime;
+    /* background: lime; */
     margin: 0 0 1rem;
     text-align: left;
 
 }
 .contacto .rrss{
     width: 100%;
-    background: blue;
+    /* background: blue; */
 
     display: flex;
     flex-flow: row wrap;
@@ -221,18 +316,29 @@ main{
 }
 .contacto .a{}
 .contacto .svg{
-    width: 2rem;
-    height: 2rem;
-    background: red;
+    width: 3rem;
+    height: 3rem;
+    
 }
 
 
 .footer{
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     text-align: center;
     padding: 2rem 0;
 }
 
 .footer .span{
     
+}
+
+
+@keyframes circulo1 {
+    from{
+        transform: rotate(0deg) scale(3);
+        
+    }
+    to{
+        transform: rotate(360deg) scale(3);
+    }
 }
