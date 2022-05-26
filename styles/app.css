@@ -98,15 +98,15 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--gris);
+    background-color: black;
     z-index: 1;
-    filter: blur(50px);
+    filter: blur(40px);
+    animation: circulo1 50s linear infinite both;
 }
 .circulo{
     position: absolute;
     width: 50%;
     height: 50%;
-    animation: circulo1 50s linear infinite both;
 }
 
 
@@ -229,6 +229,8 @@ main{
     font-family: var(--tipografia);
     font-size: 10rem;
     font-weight: 400;
+    color: rgba(255, 255, 255, .7);
+    mix-blend-mode: multiply;
 }
 .seccion .h3{
     font-family: var(--tipografia);
@@ -323,9 +325,11 @@ main{
 
 
 .footer{
-    /* background-color: rosybrown; */
     text-align: center;
     padding: 2rem 0;
+    color: white;
+    position: relative;
+    z-index: 2;
 }
 
 .footer .span{
@@ -335,10 +339,10 @@ main{
 
 @keyframes circulo1 {
     from{
-        transform: rotate(0deg) scale(3);
+        transform: rotate(0deg) scale(2);
         
     }
     to{
-        transform: rotate(360deg) scale(3);
+        transform: rotate(360deg) scale(2);
     }
 }
