@@ -91,7 +91,7 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.2;
-    /* cursor: none; */
+    cursor: none;
 }
 
 .circulos{
@@ -164,11 +164,7 @@ body{
     align-items: center;
     display: none;
 }
-.header .h1{
-    
-}
-.header .h1 a{}
-.header .nav{}
+
 .header .ul{
     display: flex;
     flex-flow: row wrap;
@@ -246,7 +242,6 @@ main{
     font-style: italic;
 }
 
-.seccion .p{}
 .seccion .grid{
     width: 90%;
     max-width: 40rem;
@@ -267,8 +262,6 @@ main{
     border-radius: 1rem;
 }
 
-
-.seccion .a{}
 .seccion .img{
     width: 100%;
 }
@@ -307,8 +300,6 @@ main{
 .works .h2{
     margin-bottom: 1rem;
 }
-
-.contacto{}
 
 .contacto .h2{
     margin: 0 0 1rem;
