@@ -107,12 +107,13 @@ body{
     position: absolute;
     width: 50%;
     height: 50%;
+    transform: scale(1.2);
 }
 
 
 .circulo1{
-    top: 0%;
-    left: 0%;
+    top: 15%;
+    left: 15%;
 
 }
 
@@ -122,25 +123,25 @@ body{
 
 
 .circulo2{
-    top: 0%;
-    right: 0%;
+    top: 15%;
+    right: 15%;
 }
 
 .circulo2 .path{
     fill: seagreen;
 }
 .circulo3{
-    bottom: 0%;
-    left: 0%;
+    bottom: 15%;
+    left: 15%;
 }
 
 .circulo3 .path{
-    fill: black;
+    fill: rgb(212, 107, 107);
 }
 
 .circulo4{
-    bottom: 0%;
-    right: 0%;
+    bottom: 15%;
+    right: 15%;
 }
 
 .circulo4 .path{
@@ -339,10 +340,10 @@ main{
 
 @keyframes circulo1 {
     from{
-        transform: rotate(0deg) scale(2);
+        transform: rotate(0deg) scale(3);
         
     }
     to{
-        transform: rotate(360deg) scale(2);
+        transform: rotate(360deg) scale(3);
     }
 }
