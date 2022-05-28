@@ -10,12 +10,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const links = document.querySelectorAll('.a')
     links.forEach(link => {
-        console.log(link)
         link.addEventListener('mouseover', function(){
-            console.log(cursor.classList.add('mini'))
+            cursor.classList.add('mini')
         });
         link.addEventListener('mouseout', function(){
-            console.log(cursor.classList.remove('mini'))
+            cursor.classList.remove('mini')
         });
     })
 
