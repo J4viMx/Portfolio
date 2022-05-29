@@ -22,3 +22,13 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 
+function github(){
+    window.open('https://github.com/J4viMx', '_blank');
+}
+function twitter(){
+    window.open('https://twitter.com/J4viMx', '_blank');
+}
+function linkedin(){
+    window.open('https://www.linkedin.com/in/javimx/', '_blank');
+}
+
