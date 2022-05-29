@@ -19,6 +19,41 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 
 
+
+
+
+        /* 3d animation */
+    const Texts = [
+        'HTML', 'CSS', 'JAVASCRIPT',
+        'SASS', 'Bootstrap', 'REACT.JS',
+        'VUE.JS', 'Node.js',
+        'Express', 'MYSQL', 'Photoshop',
+        'Adobe XD', 'GIT', 'GitHub', 'SCRUM'
+    ];
+
+    var tagCloud = TagCloud('.Sphere', Texts, {
+
+        // Sphere radius in px
+        radius: 300,
+
+        // animation speed
+        // slow, normal, fast
+        maxSpeed: 'fast',
+        initSpeed: 'fast',
+
+        // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+        direction: 135,
+
+        // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+        keep: true
+
+    });
+
+    // Giving color to each text in sphere
+    var color = 'white';
+    document.querySelector('.Sphere').style.color = color;
+
+
 })
 
 
@@ -31,4 +66,6 @@ function twitter(){
 function linkedin(){
     window.open('https://www.linkedin.com/in/javimx/', '_blank');
 }
+
+
 

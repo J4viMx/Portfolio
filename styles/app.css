@@ -338,6 +338,12 @@ main{
     gap: 2rem;
 }
 
+@media (max-width: 768px) {
+    .article-info{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
 .article-info-descripcion{
     display: flex;
     flex-direction: column;
@@ -356,6 +362,7 @@ main{
 
 .article-tecnologias{
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -404,6 +411,24 @@ main{
     margin-bottom: 1rem;
 }
 
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+    .contacto{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.contacto .contacto-descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contacto .h2{
     margin: 0 0 1rem;
 }
@@ -429,6 +454,24 @@ main{
     height: 3rem;
     
 }
+
+.contacto-tecnologias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tagcloud {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  
+  .tagcloud--item:hover {
+    color: #FFC300 ;
+  }
 
 
 .footer{
@@ -495,6 +538,9 @@ main{
 .redes-sociales div:hover::before{
     transform: skewX(45deg) translateX(-400%); 
 }
+
+
+
 
 
 @keyframes circulo1 {
@@ -569,3 +615,5 @@ main{
    .boton-proyecto:active {
     box-shadow: none;
    }
+
+
