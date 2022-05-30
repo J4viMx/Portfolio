@@ -17,6 +17,24 @@ document.addEventListener('DOMContentLoaded', function(){
             cursor.classList.remove('mini')
         });
     })
+    const buttons = document.querySelectorAll('button')
+    buttons.forEach(button => {
+        button.addEventListener('mouseover', function(){
+            cursor.classList.add('mini')
+        });
+        button.addEventListener('mouseout', function(){
+            cursor.classList.remove('mini')
+        });
+    })
+    const redes = document.querySelectorAll('.redes-sociales div')
+    redes.forEach(red => {
+        red.addEventListener('mouseover', function(){
+            cursor.classList.add('mini')
+        });
+        red.addEventListener('mouseout', function(){
+            cursor.classList.remove('mini')
+        });
+    })
 
 
 
