@@ -164,9 +164,9 @@ body{
     right: -100%;
     top: -100%;
     z-index: 3;
-    background-color: rgba(161, 161, 161, 0.425);
-    border-left: 3px solid #a0a0a0;
-    border-bottom: 3px solid #a0a0a0;
+    background-color: rgba(65, 65, 65, 0.425);
+    border-left: 3px solid #525252;
+    border-bottom: 3px solid #464545;
     -moz-border-radius: 0 100% 0 0;
     -webkit-border-radius: 0 0 0 100%;
     border-radius: 0 0 0 100%;
@@ -585,17 +585,18 @@ main{
     top: 50%;
     transform: translateY(-50%);
     z-index: 3;
-    width: 6rem;
+    width: 12rem;
     height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
-    
+    overflow: hidden;
 }
 
 .redes-sociales div{
-    width: 100%;
+    overflow: hidden;
+    width: 50%;
     height: 100%;
     border-radius: 1rem;
     color: white;
@@ -608,8 +609,13 @@ main{
     box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2px);
     transition: 0.5s;
-    overflow: hidden;
 }
+
+/* .git-hub,
+.twitter,
+.linkedin{
+    overflow: hidden;
+} */
 
 .redes-sociales div svg{
     transform: scale(1.5);
