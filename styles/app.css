@@ -487,9 +487,16 @@ main{
 .footer{
     text-align: center;
     padding: 2rem 0;
-    color: white;
+    color: rgb(230, 228, 228);
     position: relative;
     z-index: 2;
+    background-color: #303030;
+    border-top: 1px solid #424242;
+    font-size: 1.5rem;
+}
+
+.footer p{
+    margin-top: 1rem;
 }
 
 .redes-sociales{
