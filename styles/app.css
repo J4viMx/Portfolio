@@ -157,29 +157,105 @@ body{
 
 
 .header{
-    width: 100%;
-    min-width: 5rem;
-    
-
+    width: 40rem;
+    height: 40rem;
     padding: 1rem 2rem;
+    position: fixed;
+    right: -100%;
+    top: -100%;
+    z-index: 3;
+    background-color: rgba(161, 161, 161, 0.425);
+    border-left: 3px solid #a0a0a0;
+    border-bottom: 3px solid #a0a0a0;
+    -moz-border-radius: 0 100% 0 0;
+    -webkit-border-radius: 0 0 0 100%;
+    border-radius: 0 0 0 100%;
+    transition: .5s ease;
+}
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    display: none;
+.header-activate{
+    top: 0;
+    right: 0;
+}
+
+.header .nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-40%);
+    transform: translateY(-100%);
 }
 
 .header .ul{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
+    gap: 3rem;
 }
 .header .li{
     margin: 0 1rem;
+    font-size: 2.2rem;
 }
 
+.activate-opciones{
+    animation: aparecer2 2s ease ;
+}
+
+
+
+.header .li:hover{
+    border-bottom: 2px solid white;
+}
+
+/* Menu */
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 4;
+    transform: scale(.5);
+  }
+  .line {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
 
 main{
     margin: 1rem 0;
@@ -583,6 +659,16 @@ main{
     to{
         transform: translateY(0%);
     }
+}
+
+@keyframes aparecer2 {
+    from{
+        transform: translateY(150%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+    
 }
 
 

@@ -63,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.Sphere').style.color = color;
 
 
+    
+
 })
 
 
@@ -77,4 +79,13 @@ function linkedin(){
 }
 
 
+const header = document.querySelector('.header')
+const opcionesMenu = document.querySelectorAll('.header .li')
+function menu (){
+    header.classList.toggle('header-activate')
+    console.log(opcionesMenu)
 
+    opcionesMenu.forEach(opcionMenu => {
+            opcionMenu.classList.toggle('activate-opciones')
+        });
+}
