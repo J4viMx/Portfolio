@@ -413,7 +413,7 @@ main{
 
 .contacto{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
 }
 
 @media (max-width: 768px) {
@@ -429,13 +429,23 @@ main{
     align-items: center;
 }
 
+.contacto .contacto-descripcion div{
+    
+    padding: 2rem;
+    background-color: rgba(59, 59, 59, 0.5);
+    border-radius: 2rem;
+    width: 85%;
+    box-shadow: 15px 10px 67px -20px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 15px 10px 67px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 10px 67px -20px rgba(0,0,0,0.75);
+}
+
 .contacto .h2{
     margin: 0 0 1rem;
 }
 .contacto .p{
-    max-width: 40rem;
-    margin: 0 0 1rem;
-    text-align: left;
+    margin-top: 2rem;
+    font-size: 1.8rem;
 
 }
 .contacto .rrss{
@@ -466,11 +476,11 @@ main{
     display: inline-block;
     font-weight: bold;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 2.4rem;
   }
   
   .tagcloud--item:hover {
-    color: #FFC300 ;
+    color: #c5c0c0 ;
   }
 
 
