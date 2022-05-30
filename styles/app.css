@@ -97,6 +97,7 @@ body{
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.2;
     cursor: none;
+    max-width: 100%;
 }
 
 .circulos{
