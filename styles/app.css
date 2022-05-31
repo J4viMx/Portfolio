@@ -299,8 +299,6 @@ main{
     font-weight: 400;
     text-transform: uppercase;
     padding: 1rem 1rem 1rem;
-    /* border: 1px solid rgba(0, 0, 0, .9); */
-    /* border-radius: 50%; */
     transition: all .5s ease;
     animation: aparecer1 2s ease 1 backwards;
 
@@ -444,6 +442,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
 }
 
 .article-tecnologia{
@@ -829,3 +828,11 @@ main{
     animation:move-background 150s linear infinite;
   }
 
+
+.cv{
+    margin-top: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 1rem 1rem;
+    transition: all .5s ease;
+}

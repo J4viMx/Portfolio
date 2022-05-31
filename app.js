@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     if( screen.width < 768){
         var tagCloud = TagCloud('.Sphere', Texts, {
-            radius: 180,
+            radius: 175,
             maxSpeed: 'fast',
             initSpeed: 'normal',
             direction: 135,
