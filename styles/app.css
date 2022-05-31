@@ -379,6 +379,13 @@ main{
     color: rgba(255, 255, 255, .7);
     mix-blend-mode: multiply;
 }
+
+@media (max-width: 768px) {
+    .seccion .h2{
+        font-size: 6rem;
+    }
+}
+
 .seccion .h3{
     font-family: var(--tipografia);
     font-size: 5rem;
