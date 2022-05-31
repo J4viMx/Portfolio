@@ -49,15 +49,29 @@ document.addEventListener('DOMContentLoaded', function(){
         'Adobe XD', 'GIT', 'GitHub', 'SCRUM'
     ];
 
-    var tagCloud = TagCloud('.Sphere', Texts, {
+    if( screen.width < 768){
+        var tagCloud = TagCloud('.Sphere', Texts, {
+            radius: 180,
+            maxSpeed: 'fast',
+            initSpeed: 'normal',
+            direction: 135,
+            keep: true
+        });
+    } 
 
-        radius: 250,
-        maxSpeed: 'fast',
-        initSpeed: 'normal',
-        direction: 135,
-        keep: true
+    
+    if( screen.width >768){
+        var tagCloud = TagCloud('.Sphere', Texts, {
+            radius: 250,
+            maxSpeed: 'fast',
+            initSpeed: 'normal',
+            direction: 135,
+            keep: true
+        });
+    } 
 
-    });
+    
+
 
     var color = 'white';
     document.querySelector('.Sphere').style.color = color;
