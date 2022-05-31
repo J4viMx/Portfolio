@@ -447,13 +447,14 @@ main{
 
 .article-tecnologia{
     margin-top: 5rem;
-    background-color: white;
-    border: 1px solid #303030;
-    color: #000000;
+    /* background-color: white; */
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #fff;
     font-size: 1.3rem;
     font-weight: 400;
     padding: 1rem 2rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
 }
 
 .seccion .article-cover{
