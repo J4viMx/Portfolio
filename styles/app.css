@@ -28,7 +28,6 @@ a{
     display: block;
     text-decoration: none;
     color: inherit;
-    cursor: none;
 }
 
 video{
@@ -82,9 +81,6 @@ select{
     color: inherit;
 }
 
-button{
-    cursor: none;
-}
 
 body{
     font-family: var(--tipografia);
@@ -96,7 +92,6 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.2;
-    cursor: none;
     max-width: 100%;
 }
 
@@ -684,23 +679,6 @@ main{
     
 }
 
-
-#cursor{
-    width: 4rem;
-    height: 4rem;
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    pointer-events: none;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-}
-
-#cursor.mini{
-    transform: scale(0.7);
-}
 
 
 /* From uiverse.io by @barisdogansutcu */
